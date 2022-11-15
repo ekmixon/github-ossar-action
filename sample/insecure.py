@@ -10,7 +10,7 @@ except: pass
 ys=[1, 2, None, None]
 for y in ys:
     try:
-        print(str(y+3)) #TypeErrors ahead
+        print(y+3)
     except: continue #not how to handle them
 
 #some imports
@@ -19,6 +19,6 @@ import ftplib
 
 #B303 and B324
 s = b"I am a string"
-print("MD5: " +hashlib.md5(s).hexdigest())
-print("SHA1: " +hashlib.sha1(s).hexdigest())
-print("SHA256: " +hashlib.sha256(s).hexdigest())
+print(f"MD5: {hashlib.md5(s).hexdigest()}")
+print(f"SHA1: {hashlib.sha1(s).hexdigest()}")
+print(f"SHA256: {hashlib.sha256(s).hexdigest()}")
